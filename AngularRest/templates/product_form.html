@@ -1,0 +1,47 @@
+<form>
+  <div class="card top-space">
+    <div class="p+">
+      <h1>{{ title }}</h1>
+      <div flex-container="row">
+        <div flex-item>
+          <lx-text-field label="name">
+            <input type="text" ng-model="product.name">
+          </lx-text-field>
+        </div>
+      </div>
+      <div flex-container="row">
+        <div flex-item>
+          <lx-text-field label="picture">
+            <input type="text" ng-model="product.picture">
+          </lx-text-field>
+        </div>
+      </div>
+      <div flex-container="row">
+        <div flex-item>
+          <lx-text-field label="price">
+            <input type="number" ng-model="product.price">
+          </lx-text-field>
+        </div>
+      </div>
+      <div flex-container="row">
+        <div flex-item>
+          <lx-text-field label="category">
+            <input type="text" ng-model="product.category">
+          </lx-text-field>
+        </div>
+      </div>
+      <div flex-container="row">
+        <div flex-item>
+          <lx-text-field label="description">
+            <textarea ng-model="product.description"></textarea>
+          </lx-text-field>
+        </div>
+      </div>
+    </div>
+    <div class="card__actions">
+      <button type="submit" class="btn btn--blue btn--l btn--raised" ng-click="saveProduct()">
+        Envíar
+      </button>
+    </div>
+  </div>
+</form>
