@@ -24,9 +24,8 @@ function signUp (req, res) {
 }
 
 function signIn (req, res) {
-  const email = req.body.email.toLowerCase()
+  const email = req.body.email
   const password = req.body.password
-
   const passwordEncrypt = encrypt.encrypt(email, password)
 
   User.findOne({email: email}, (err, user) => {
